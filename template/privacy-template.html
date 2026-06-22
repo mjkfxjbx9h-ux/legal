@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  YENİDEN KULLANILABİLİR GİZLİLİK ŞABLONU
+  Yeni app için: bu dosyayı  ../<appslug>/privacy/index.html  olarak kopyala,
+  {{APP_NAME}}, {{LAST_UPDATED}}, {{CONTACT_EMAIL}} ve veri-toplama bölümünü düzenle.
+  Veri TOPLAYAN bir app yaparsan "Topladığımız veriler" bölümünü dürüstçe güncelle
+  (App Store Connect'teki "App Privacy" beyanıyla birebir uyumlu olmalı).
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{APP_NAME}} — Gizlilik Politikası</title>
+<meta name="description" content="{{APP_NAME}} gizlilik politikası.">
+<style>
+  :root{ --bg:#0e0e14; --text:#ECECF1; --muted:#A0A0B0; --accent:#7C5CFF; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; padding:0 20px; }
+  .wrap{ max-width:720px; margin:0 auto; padding:56px 0 80px; }
+  .badge{ display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--accent);
+    background:rgba(124,92,255,.12); border:1px solid rgba(124,92,255,.25);
+    padding:6px 12px; border-radius:999px; font-weight:600; }
+  h1{ font-size:30px; font-weight:800; margin:22px 0 6px; letter-spacing:-.02em; }
+  .updated{ color:var(--muted); font-size:14px; margin:0 0 36px; }
+  h2{ font-size:19px; font-weight:700; margin:34px 0 10px; }
+  p,li{ color:#D2D2DE; }
+  strong{ color:var(--text); }
+  a{ color:var(--accent); }
+  ul{ padding-left:22px; } li{ margin:6px 0; }
+  footer{ margin-top:56px; padding-top:22px; border-top:1px solid #24242f; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <span class="badge">🔒 Veri toplanmaz</span>
+    <h1>{{APP_NAME}} Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: {{LAST_UPDATED}}</p>
+
+    <p>{{APP_NAME}} ("uygulama") gizliliğine önem verir. Bu politika, uygulamanın hangi verileri işlediğini açıklar.</p>
+
+    <h2>Topladığımız veriler</h2>
+    <p><strong>Hiçbiri.</strong> {{APP_NAME}} hiçbir kişisel veriyi toplamaz, sunucuya göndermez veya üçüncü taraflarla paylaşmaz. Tüm veriler yalnızca cihazında saklanır; hesap gerekmez; analitik/reklam/takip SDK'sı kullanılmaz.</p>
+
+    <h2>Satın almalar</h2>
+    <p>Abonelikler Apple App Store üzerinden işlenir. Ödeme bilgilerine {{APP_NAME}} erişmez; süreç tamamen Apple tarafından yönetilir.</p>
+
+    <h2>Verilerinin silinmesi</h2>
+    <p>Tüm verilerin cihazında olduğundan, uygulamayı silmen tüm verilerini kalıcı olarak siler.</p>
+
+    <h2>Çocukların gizliliği</h2>
+    <p>Uygulama 13 yaş altı çocuklardan bilerek veri toplamaz.</p>
+
+    <h2>İletişim</h2>
+    <p>Sorular için: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+
+    <footer>© 2026 {{APP_NAME}}</footer>
+  </main>
+</body>
+</html>
