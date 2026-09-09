@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girder — Support</title>
+<meta name="description" content="Girder support. Job costing and estimating for small metal fabrication shops.">
+<style>
+  :root{ --bg:#0d1014; --text:#f1f4f8; --muted:#98a3b3; --accent:#5aa0f0; --line:#232a33; --card:#161b22; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; padding:0 20px; }
+  .wrap{ max-width:720px; margin:0 auto; padding:56px 0 80px; }
+  h1{ font-size:30px; font-weight:800; margin:0 0 10px; letter-spacing:-.02em; }
+  h2{ font-size:19px; font-weight:700; margin:0 0 10px; }
+  p,li{ color:#cdd5e0; }
+  strong{ color:var(--text); }
+  a{ color:var(--accent); }
+  ul{ padding-left:22px; } li{ margin:6px 0; }
+  code{ background:#0a0d11; border:1px solid var(--line); border-radius:5px;
+    padding:1px 6px; font-size:14px; color:var(--text); }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:22px; margin:26px 0; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Girder — Support</h1>
+    <p>Job costing and estimating for small metal fabrication shops. Girder works out what a job leaves you before you say a number out loud, then tells you what it actually paid once the work is done.</p>
+
+    <div class="card">
+      <h2>Where the steel weights come from</h2>
+      <p>Girder calculates section weight from the geometry of the section and the density of the material, rather than looking it up in a stocklist. That is why a size nobody publishes a table for still works.</p>
+      <p>You can check any figure it produces against a published section table. A 42.4 × 2.6 CHS returns <code>2.55 kg/m</code>.</p>
+      <p style="margin-bottom:0">Against published tables, angle sits within about 0.3% and hollow section runs roughly 2% heavy, because the tables account for corner radii that a plain wall calculation does not. That is close enough to quote from and <strong>not</strong> close enough to design from.</p>
+    </div>
+
+    <div class="card">
+      <h2>Common questions</h2>
+
+      <p><strong>Why is the steel more expensive than the length I entered?</strong><br>
+      Because that is what the merchant bills. Three 1.1 m posts do not cost 3.3 m of steel, they cost a 6 m bar. Girder charges the whole length and shows the offcut as its own line so you can see what the drop costs rather than absorbing it silently. The offcut allowance is in <strong>Settings → Offcut</strong>.</p>
+
+      <p><strong>Can I quote in imperial?</strong><br>
+      Yes. <strong>Settings → Units &amp; currency</strong>. Switching units changes how figures are shown and typed; it never changes the value of anything already saved, and it does not re-price a saved job.</p>
+
+      <p><strong>My hourly rate looks too high.</strong><br>
+      It is probably correct. The rate wizard works from hours you can actually invoice, not from a 2,080-hour year. Quoting, sourcing, travel and cleanup come out of the same week and none of them reach an invoice, so the break-even rate that comes out of real billable hours is a good deal higher than the one most shops carry in their head.</p>
+
+      <p><strong>Where is my data?</strong><br>
+      On your device and in your own iCloud. There is no account, no server of ours, and nothing is collected. See the <a href="./privacy/">Privacy Policy</a>.</p>
+
+      <p><strong>What does the free version include?</strong><br>
+      One job, in full: price the steel, build the order list for the yard, log the hours, and see what the job really paid. Nothing about that first job is crippled.</p>
+
+      <p><strong>What does Pro add?</strong><br>
+      Every job after the first, quotes and invoices as PDFs on your letterhead, recorded payments, and the pattern across your finished jobs. Girder Pro is $19.99/month or $149/year, with a 7-day free trial. The subscription screen is at <strong>Settings → Girder Pro</strong>.</p>
+
+      <p><strong>I already subscribed but Pro is not on.</strong><br>
+      <strong>Settings → Restore purchases</strong>. Use the same Apple Account the subscription was bought with.</p>
+
+      <p style="margin-bottom:0"><strong>How do I cancel?</strong><br>
+      Subscriptions are managed by Apple, not by us: open the Settings app, tap your name, then Subscriptions. Cancelling at least 24 hours before the period ends stops the next charge.</p>
+    </div>
+
+    <div class="card">
+      <p><strong>Need help, found a number that looks wrong, or want something added?</strong><br>
+      Email <a href="mailto:aykutaydmr@gmail.com">aykutaydmr@gmail.com</a>. If a figure looks off, say which one and what you expected — that is the most useful thing you can send.</p>
+      <p style="margin-bottom:0"><a href="./privacy/">Privacy Policy</a> · <a href="./terms/">Terms of Use</a></p>
+    </div>
+
+    <p style="color:var(--muted);font-size:13px;margin-top:36px">Girder is a costing tool, not an engineering one. Section weights are estimates for quoting. Do not use them for structural design.</p>
+  </main>
+</body>
+</html>
